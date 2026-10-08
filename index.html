@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 5</title>
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="display">
+                <div id="displayOperation">=</div>
+                <br>
+                <div id="displayText">0</div>
+            </div>
+            <div id="buttons">
+                <button class = "button" onclick="appendNumber('7')">7</button>
+                <button class = "button" onclick="appendNumber('8')">8</button>
+                <button class = "button" onclick="appendNumber('9')">9</button>
+                <button class = "button operator" onclick="chooseOperator('/')">&divide;</button>
+
+                <button class = "button" onclick="appendNumber('4')">4</button>
+                <button class = "button" onclick="appendNumber('5')">5</button>
+                <button class = "button" onclick="appendNumber('6')">6</button>
+                <button class = "button operator" onclick="chooseOperator('*')">&times;</button>
+
+                <button class = "button" onclick="appendNumber('1')">1</button>
+                <button class = "button" onclick="appendNumber('2')">2</button>
+                <button class = "button" onclick="appendNumber('3')">3</button>
+                <button class = "button operator" onclick="chooseOperator('-')">&minus;</button>
+
+                <button class = "button" onclick="appendNumber('0')">0</button>
+                <button class = "button clear" onclick="clearDisplay()">C</button>
+                <button class = "button equal" onclick="computeResult()">=</button>
+                <button class = "button operator" onclick="chooseOperator('+')">+</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
